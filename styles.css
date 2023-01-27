@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+body {background-color: antiquewhite;}
+.tablez {width: 100%;}
+.imgz {max-width: 350px;}
+.h1z {width: 100%; text-align: center; font-size: 90pt; font-family: 'Amatic SC', cursive;}
+
+.timer {
+    padding: 10px 10px 10px 370px;
+    display: flex; /* Размещаем цифры в ряд */
+    user-select: none; /* Запрещаем выделение при клике */
+    font-size: 200px; /* Задаем размер цифр */
+    font-weight: 300;
+    color: #000000; /* Задаем цвет цифр */
+    font-family: 'Amatic SC', cursive;
+    
+  }
+  
+  .timer__item {
+    margin: 0 20px; /* Отступы между полями таймера */
+    position: relative;
+    text-align: center;
+  }
+  
+  /* После каждого поля, кроме последнего, вставляем : */
+  .timer__item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -30px;
+  }
+  
+  /* Стили для подсказок */
+  .timer__item::before {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ff0000;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timer__days::before {
+    content: "дней";
+  }
+  
+  .timer__hours::before {
+    content: "часов";
+  }
+  
+  .timer__minutes::before {
+    content: "минут";
+  }
+  
+  .timer__seconds::before {
+    content: "секунд";
+  }
