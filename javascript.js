@@ -5,7 +5,7 @@ const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 
 // Устанавливаем дату и время, до которого хотим посчитать разницу
-let countDownDate = new Date("Feb 11, 2023 00:00:00").getTime();
+let countDownDate = new Date("Feb 11, 2023 15:00:00").getTime();
 
 let updateTimer = setInterval(function () {
   // Получаем текущее дату и время
